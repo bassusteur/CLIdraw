@@ -12,7 +12,7 @@ int main()
      {
         frames++;
         frame++;
-        if(frame==30){state = halt(state);frame=0;}
+        if(frame==30){frame=0;}
         displaycl(frame);
         display(size, frame, frames, n);
      }
