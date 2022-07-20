@@ -3,12 +3,12 @@
 #include <unistd.h>
 using namespace std;
 
-bool halt(bool state) {state = false;return state;}
-bool resume(bool state) {state = true;return state;}
+bool halt(bool state){state = false;return state;}
+bool resume(bool state){state = true;return state;}
 
-void delay(int time) {for(int x; x<time; x++){}}
+void delay(int time){for(int x; x<time; x++){}}
 
-void displaycl(int frame) 
+void displaycl(int frame)
 {
     if (system("CLS")) system("clear");
 }
@@ -32,8 +32,8 @@ int display(int size, int frame, int frames, string n)
             printf(" ");
             for(int i=0; i<30; i++)
             { 
-             move(XSIZE, YSIZE, frame, 0, (size/2), i,"HELLO");
-             move(XSIZE, YSIZE, frame, 2, ((size/2)), i,"WORLD");
+                move(XSIZE, YSIZE, frame, 0, (size/2), i,"HELLO");
+                move(XSIZE, YSIZE, frame, 2, ((size/2)), i,"WORLD");
             }
         }
     }
