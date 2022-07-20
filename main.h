@@ -1,6 +1,15 @@
-#include <iostream>
-#include <stdlib.h>
-#include <unistd.h>
+#ifdef __unix__                    /* __unix__ is usually defined by compilers targeting Unix systems */
+    #define OS_Windows 0
+    #include <iostream>
+    #include <stdlib.h>
+    #include <unistd.h>
+#elif defined(_WIN32) || defined(WIN32)     /* _Win32 is usually defined by compilers targeting 32 or   64 bit Windows systems */
+    #define OS_Windows 1
+    #include <iostream>
+    #include <stdlib.h>
+    #include <unistd.h>
+#endif
+
 using namespace std;
 
 bool halt(bool state){state = false;return state;}
@@ -10,7 +19,10 @@ void delay(int time){for(int x; x<time; x++){}}
 
 void displaycl(int frame)
 {
-    if (system("CLS")) system("clear");
+    if(!OS_Windows)
+     system("clear");
+    else
+    system("cls");
 }
 
 void move(int xsize, int ysize, int frame, int x, int y, int f, const char* s)
