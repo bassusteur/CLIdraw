@@ -8,7 +8,8 @@ int main()
      int size = 70;
      int frame = -1;
      int frames = 0;
-     while(state == true){
+     while(state == true)
+     {
         frames++;
         frame++;
         if(frame==30){state = halt(state);frame=0;}
