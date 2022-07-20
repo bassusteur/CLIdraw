@@ -16,7 +16,7 @@ void displaycl(int frame)
 void move(int xsize, int ysize, int frame, int x, int y, int f, const char* s)
 {
     if(xsize==x && ysize==y && frame == f) 
-    {printf(s);}
+    {printf("%s", s);}
 }
 
 int display(int size, int frame, int frames, string n)
