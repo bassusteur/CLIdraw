@@ -5,7 +5,7 @@ int main()
     string n;
     while(true){
      bool state = true;
-     int size = 70;
+     int size = 50;
      int frame = -1;
      int frames = 0;
      while(state == true)
@@ -20,7 +20,7 @@ int main()
      {
         printf("\n> ");
         cin>>n;
-        delay(500000000);
+        if(n=="exit"){exit(0);}
         state = resume(state);
      }
     }

@@ -13,27 +13,28 @@ void displaycl(int frame)
     if (system("CLS")) system("clear");
 }
 
-void move(int XSIZE, int YSIZE, int frame, int x, int y, int f, const char* s)
+void move(int xsize, int ysize, int frame, int x, int y, int f, const char* s)
 {
-    if(XSIZE==x && YSIZE==y && frame == f) 
+    if(xsize==x && ysize==y && frame == f) 
     {printf(s);}
 }
 
 int display(int size, int frame, int frames, string n)
 {
-    int XSIZE = 0;
+    int xsize = 0;
     int pixels = 0;
-    for(XSIZE; XSIZE<8; XSIZE++)
+    for(xsize; xsize<8; xsize++)
     {
         cout<<"\n";
-        for(int YSIZE = 0; YSIZE<size; YSIZE++)
+        for(int ysize = 0; ysize<size; ysize++)
         {
             pixels=pixels+1;
             printf(" ");
             for(int i=0; i<30; i++)
             { 
-                move(XSIZE, YSIZE, frame, 0, (size/2), i,"HELLO");
-                move(XSIZE, YSIZE, frame, 2, ((size/2)), i,"WORLD");
+                move(xsize, ysize, frame, 0, (size/2), i,"MENU");
+                move(xsize, ysize, frame, 2, ((size/2)), i,"Play");
+                move(xsize, ysize, frame, 4, ((size/2)), i,"Exit");
             }
         }
     }
