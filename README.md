@@ -2,7 +2,7 @@
 
 ## To Do's:
 
-fix linux refresh of screen.
+fix linux refresh of terminal.
 
 ## Linux:
 
