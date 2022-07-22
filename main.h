@@ -21,10 +21,14 @@ void delay(int time){for(int x; x<time; x++){}}
 void displaycl(int frame)
 {
     if(!OS_Windows)
-     system("clear");
-     delay(100000000);
+    {
+        system("clear");
+        delay(100000000);
+    }
     else
-     system("cls");
+    {
+        system("cls");
+    }
 }
 
 void move(int xsize, int ysize, int frame, int x, int y, int f, const char* s)
