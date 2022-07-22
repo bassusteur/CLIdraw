@@ -22,8 +22,8 @@ void displaycl(int frame)
 {
     if(!OS_Windows)
     {
+        delay(5000000);
         system("clear");
-        delay(100000000);
     }
     else
     {
