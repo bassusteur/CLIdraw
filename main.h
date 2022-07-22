@@ -24,7 +24,7 @@ void displaycl(int frame)
      system("clear");
      delay(100000000);
     else
-    system("cls");
+     system("cls");
 }
 
 void move(int xsize, int ysize, int frame, int x, int y, int f, const char* s)
