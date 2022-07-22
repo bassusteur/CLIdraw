@@ -51,6 +51,7 @@ bool process(string n, bool state)
     }
     else
     {
+        system("clear");
         printf("unknown input");
     }
     return state;
