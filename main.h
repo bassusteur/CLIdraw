@@ -37,6 +37,25 @@ void move(int xsize, int ysize, int frame, int x, int y, int f, const char* s)
     {printf("%s", s);}
 }
 
+bool process(string n, bool state)
+{
+    printf("\n> ");
+    cin>>n;
+    if(n=="exit"|n=="Exit"|n=="EXIT")
+    {
+        exit(0);
+    }
+    else if(n=="resume"|n=="Resume"|n=="RESUME")
+    {
+        state = resume(state);
+    }
+    else
+    {
+        printf("unknown input");
+    }
+    return state;
+}
+
 int display(int size, int frame, int frames, string n)
 {
     int xsize = 0;
