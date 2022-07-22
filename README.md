@@ -1,10 +1,10 @@
 # CLIdraw
 
-## To Do's:
+### To Do's:
 
 fix linux refresh of terminal.
 
-## Compiling: 
+### Compiling: 
 
 works on both linux and windows, no additional libraries required.
 
