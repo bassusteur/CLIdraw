@@ -4,7 +4,9 @@
 
 fix linux refresh of terminal.
 
-## Linux:
+## Compiling: 
+
+works on both linux and windows, no additional libraries required.
 
 git clone https://github.com/bassusteur/CLIdraw.git
 
